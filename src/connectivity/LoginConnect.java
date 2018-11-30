@@ -13,7 +13,7 @@ public class LoginConnect {
         String password = "";
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             login = DriverManager.getConnection("jdbc:mysql://localhost/"+dbName,userName,password);
         } catch (ClassNotFoundException | SQLException e) {

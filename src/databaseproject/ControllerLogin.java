@@ -21,7 +21,7 @@ public class ControllerLogin {
         LoginConnect loginConnect = new LoginConnect();
         Connection connection = loginConnect.getLogin();
 
-        String sql = "INSERT INTO USER VALUES('" + userField.getText() + "')";
+        String sql = "INSERT INTO LOGIN VALUES('" + userField.getText() + "')";
         Statement statement = connection.createStatement();
         statement.executeUpdate(sql);
 
